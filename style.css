@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    font-size: 1.1em;
+    background-color: #333;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    flex-direction: column;
+    text-align: center;
+    background: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-color: rgba(51, 51, 51,0.75);
+    background-blend-mode: darken;
+}
+
+.text-area{
+    width: 50%;
+}
+
+.header{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.header1{
+    font-size: 1.82em;
+    word-spacing: 1.5;
+}
+
+.header2{
+    font-size: 1.5em;
+    padding-top: 1em;
+}
+
+.body{
+    font-size: 1em;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #333;
+    border: 1px solid #666;
+    color: #fff;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    transition: all 250ms ease-in-out;
+}
+
+.btn:hover,.btn:focus{
+    background-color: #eaeaea;
+    color: #333;
+}
+
+#section-a{
+    background-color: #eaeaea;
+    min-height: 25vh;
+}
+
+.content-text{
+    margin: 2rem 0;
+    columns: 2;
+    column-gap: 2em;
+    font-size: 1rem;
+}
+
+#section-b{
+    display: grid;
+    /* dont understand this rn */
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    overflow: hidden;
+}
+
+#section-c{
+    background-color: #fff;
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+
+#section-c .header{
+    padding-bottom: 1em;
+}
+
+.content{
+    color: #333;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
+ul{
+    display: flex;
+    /* to center the items */
+    grid-column: 2/4;
+    justify-content: space-around;
+}
+
+li{
+    /* this width is keeping them all the same size */
+    width: 31%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+.card{
+    /* without this it has an annoying white outline around it */
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover,.card:focus{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title{
+    margin: 0;
+    padding: 1em 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.card-content{
+    text-align: center;
+    padding: 1.5em;
+}
+
+#section-d{
+    color: #fff;
+    display: flex;
+    min-height: 20vh;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #2690d4;
+    padding: 2rem;
+}
+
+.contact > h3{
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+.contact > email{
+    margin-top: 1em;
+}
+
+.about{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.about > h3{
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer span{
+    color: #2690d4;
+    cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .content-text{
+        margin-top: 2rem;
+        columns: 1;
+        column-gap: 0;
+        font-size: 1rem;
+    }
+    #section-d{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+        text-align: center;
+    }
+    footer{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 1.5em 0;
+    }
+    
+    footer span{
+        color: #2690d4;
+        cursor: pointer;
+    }
+}
