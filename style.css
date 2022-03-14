@@ -87,6 +87,7 @@ html,body{
 }
 
 .content-text{
+    padding-bottom: 2rem;
     margin: 2rem 0;
     columns: 2;
     column-gap: 2em;
@@ -215,6 +216,15 @@ footer{
 footer span{
     color: #2690d4;
     cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .content-text{
+        margin-top: 2rem;
+        columns: 1;
+        column-gap: 0;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 700px){
